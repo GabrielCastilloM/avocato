@@ -50,7 +50,7 @@ window
             //url de la imagen
             let baseUrl = url.slice(-0, -7)
             imagen.src = `${baseUrl}${item.image}`
-            imagen.className = "imagen row-span-3 w-1/3 rounded-full h-24 w-24 flex items-center justify-center"
+            imagen.className = "imagen row-span-3 w-3/3 rounded-full h-24 w-24 flex items-center justify-center"
             //crear titulo
             const title = document.createElement('h2')
             title.textContent = item.name;
@@ -61,7 +61,7 @@ window
             price.textContent = formatPrice(item.price)
 
             const container = document.createElement('div')
-            container.className =" container shadow-xl grid grid-flow-col grid-cols-2 gap-4  border-2 border-indigo-600 rounded-md "
+            container.className ="container shadow-xl border-2 border-indigo-600 rounded-md grid grid-flow-col grid-cols-3 grid-rows-2 gap-4"
             container.append(imagen, title, price)
 
             todosLosItem.push(container)
